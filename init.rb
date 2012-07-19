@@ -30,6 +30,42 @@ class Heroku::Command::Dashboard < Heroku::Command::Base
     end
   end
 
+  # dashboard:resources
+  #
+  # opens the resources dashboard for an app
+  #
+  def resources
+    require "launchy"
+
+    if app
+      Launchy.open("https://dashboard.heroku.com/apps/#{app}/resources")
+    end
+  end
+
+  # dashboard:collaborators
+  #
+  # opens the collaborators dashboard for an app
+  #
+  def resources
+    require "launchy"
+
+    if app
+      Launchy.open("https://dashboard.heroku.com/apps/#{app}/collaborators")
+    end
+  end
+  #
+  # dashboard:settings
+  #
+  # opens the settings dashboard for an app
+  #
+  def resources
+    require "launchy"
+
+    if app
+      Launchy.open("https://dashboard.heroku.com/apps/#{app}/settings")
+    end
+  end
+
 private
 
   def optional_app
