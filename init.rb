@@ -46,7 +46,7 @@ class Heroku::Command::Dashboard < Heroku::Command::Base
   #
   # opens the collaborators dashboard for an app
   #
-  def resources
+  def collaborators
     require "launchy"
 
     if app
@@ -58,7 +58,7 @@ class Heroku::Command::Dashboard < Heroku::Command::Base
   #
   # opens the settings dashboard for an app
   #
-  def resources
+  def settings
     require "launchy"
 
     if app
