@@ -15,8 +15,3 @@ $ heroku dashboard:resources -a myapp
 $ heroku dashboard:collaborators -a myapp
 $ heroku dashboard:settings -a myapp
 ```
-
-## Note
-
-This is just a spike. The commands are horrible but I refuse to
-apologize for them.
